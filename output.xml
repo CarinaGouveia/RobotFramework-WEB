@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-04T11:56:29.525048" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste" source="C:\Users\carina.barros\Desktop\Robot\RobotFramework-WEB\teste.robot">
+<test id="s1-t1" name="Caso de Test 1" line="8">
+<kw name="Acessar a página principal do site da Amazon" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-04T11:56:29.805921" level="INFO">Opening browser 'Chrome' to base url 'http://WWW.amazon.com.br'.</msg>
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-04T11:56:29.805921" elapsed="4.647700"/>
+</kw>
+<status status="PASS" start="2024-04-04T11:56:29.805921" elapsed="4.647700"/>
+</kw>
+<kw name="Ir para o carrinho" owner="resource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-04T11:56:34.453621" level="INFO">Clicking link 'id:nav-cart'.</msg>
+<arg>locator=id:nav-cart</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-04T11:56:34.453621" elapsed="0.638793"/>
+</kw>
+<status status="PASS" start="2024-04-04T11:56:34.453621" elapsed="0.638793"/>
+</kw>
+<kw name="Validar o resultado" owner="resource">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=Seu carrinho da Amazon está vazio</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-04T11:56:35.092653" elapsed="0.012038"/>
+</kw>
+<status status="PASS" start="2024-04-04T11:56:35.092653" elapsed="0.012038"/>
+</kw>
+<tag>CasoDeTese2</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-04-04T11:56:29.805921" elapsed="5.299770"/>
+</test>
+<doc>teste exemplo</doc>
+<status status="PASS" start="2024-04-04T11:56:29.526494" elapsed="5.579197"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CasoDeTese2</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Teste">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
